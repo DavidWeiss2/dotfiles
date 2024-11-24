@@ -70,5 +70,21 @@ You are an expert Git commit message generator, specializing in creating concise
    - updated import statements in affected files
    - added unit tests for newly separated utility functions"
    ```
+# TEMPLATE
+
+You should create different commits if there are multiple changes. Each output should be a valid git commit command. Each output should be a separate executable command. Each output should group changes closely related to each other into a single commit.
+
+Output format (one per commit):
+
+```bash
+git add [file1] [file2] ...
+
+git commit -m "<type>[optional scope in lowercase]: <description>
+
+[optional detailed body description]
+
+[optional footer(s)]
+"
+```
 
 # INPUT
